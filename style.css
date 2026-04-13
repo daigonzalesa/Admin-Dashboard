@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    outline: 1px solid red;
+}
+
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 3fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
